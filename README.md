@@ -1,5 +1,5 @@
 # Retail_Analysis
-
+```
 /Retail_Analysis/
 │
 ├── Data/
@@ -19,7 +19,7 @@
 ├── config.yaml
 └── main.py
 └── requirements.txt
-
+```
 
 ## Approach
 
