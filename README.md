@@ -10,11 +10,11 @@
 │   └── analysis/
 ├── src/
 │   ├── preprocessing.py
-│   ├── eda.py
-│   ├── analysis.py
-├── src/
+│   └── eda.py
+│   └── analysis.py
+├── Notebooks/
 │   ├── Quickstart.ipynb
-│   ├── Workflow.ipynb
+│   └── Workflow.ipynb
 |
 ├── config.yaml
 └── main.py
