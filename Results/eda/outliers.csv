@@ -1,0 +1,15 @@
+Metric,Outlier Count,Outlier Percentage (%),Outlier Type
+METRIC_1,266,12.1,numeric
+METRIC_2,186,8.46,numeric
+METRIC_3,275,12.51,numeric
+METRIC_4,188,8.55,numeric
+METRIC_5,320,14.55,numeric
+METRIC_6,70,3.18,numeric
+METRIC_7,67,3.05,numeric
+METRIC_8,149,6.78,numeric
+METRIC_9,226,10.28,numeric
+METRIC_10,6,0.27,numeric
+ATTRIBUTE_1,0,0.0,categorical
+ATTRIBUTE_2,89,4.09,categorical
+ATTRIBUTE_3,78,3.55,categorical
+ATTRIBUTE_4,6,0.28,categorical
