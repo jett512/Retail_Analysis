@@ -19,6 +19,7 @@
 ├── config.yaml
 └── main.py
 └── requirements.txt
+└── data_dictionary.csv
 ```
 
 ## Approach
