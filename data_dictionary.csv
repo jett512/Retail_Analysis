@@ -1,0 +1,16 @@
+Raw Column , Data Type , Imputed Columns , Imputed Description                                              , notes / examples
+KEY        , int       , KEY             , "Unique identifier for each record, serving as the primary key." , pk
+ATTRIBUTE_1, enum      , promotion_TF    , Binary flag for promotion/status                                 , 0 or 1
+ATTRIBUTE_2, enum      , product_category, Product category or SKU group                                    , "A5, A10, AA9, A11, AA14"
+ATTRIBUTE_3, enum      , region          , "Store region, sales territory, or operational cluster"          , "GROUP_4, GROUP_40, GROUP_55"
+ATTRIBUTE_4, enum      , tier            , Functional segmentation such as marketing cluster or tier        , "GROUP_1, GROUP_4, GROUP_6"
+METRIC_1   , curr      , sales_revenue   , "Total or gross sales revenue, strongly linked to profitability.", 
+METRIC_2   , percentage, profit_margin   , "Gross or profit margin percentage, reflecting profitability."   , needs to be formatted
+METRIC_3   , curr      , refunds         , "Discounts or returns, negatively impacting revenue."            , needs to be formatted
+METRIC_4   , curr      , net_revenue     , Net revenue or sales after discounts.                            , 
+METRIC_5   , percentage, margin_pct      , Margin or markup percentage tied to profitability.               , 
+METRIC_6   , percentage, conversion_rate , Operational metric like conversion or return rate.               , 
+METRIC_7   , percentage, retention_rate  , Customer retention or loyalty rate.                              , 
+METRIC_8   , percentage, market_share    , Market share or customer satisfaction metric.                    , 
+METRIC_9   , curr      , cogs            , Cost of goods sold or operating expenses                         , needs to be formatted
+METRIC_10  , percentage, growth_rate     , Growth or performance rate over time.                            , needs to be formatted

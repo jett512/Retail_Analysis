@@ -1,0 +1,6 @@
+paths:
+  raw_data: "Data/Dataset for Technical Interview 1.xlsx"
+  processed_data: "Data/cleaned_dataset.csv"
+  eda_results: "Results/eda/missing_value_report.csv"
+  analysis_results: "Results/analysis/sales_margin_segments.csv"
+  correlation_plot: "Results/analysis/correlation_heatmap.png"
