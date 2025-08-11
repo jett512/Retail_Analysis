@@ -66,7 +66,7 @@ import os
 import pandas as pd
 
 # Change working directory to the project folder
-os.chdir('/content/Retail_Analysis')
+os.chdir('.../Retail_Analysis')
 print(f"Current working directory: {os.getcwd()}")
 
 # Run the main pipeline
@@ -74,7 +74,7 @@ print(f"Current working directory: {os.getcwd()}")
 
 # Load the analysis result CSVs
 df_1 = pd.read_csv('.../Results/analysis/top_margin_segments.csv')
-df_2 = pd.read_csv('/content/Michaels/Results/analysis/bottom_margin_segments.csv')
+df_2 = pd.read_csv('.../Results/analysis/bottom_margin_segments.csv')
 
 df_3 = pd.read_csv('.../Results/analysis/top_sales_segments.csv')
 df_4 = pd.read_csv('.../Results/analysis/bottom_sales_segments.csv')
