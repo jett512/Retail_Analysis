@@ -69,22 +69,7 @@ import pandas as pd
 os.chdir('.../Retail_Analysis')
 print(f"Current working directory: {os.getcwd()}")
 
-# Run the main pipeline
 !python main.py
 
-# Load the analysis result CSVs
-df_1 = pd.read_csv('.../Results/analysis/top_margin_segments.csv')
-df_2 = pd.read_csv('.../Results/analysis/bottom_margin_segments.csv')
-
-df_3 = pd.read_csv('.../Results/analysis/top_sales_segments.csv')
-df_4 = pd.read_csv('.../Results/analysis/bottom_sales_segments.csv')
-
-# Print the dataframes to review the output
-print("Top Margin Segments:")
-print(df_1)
-print("\nBottom Margin Segments:")
-print(df_2)
-print("\nTop Sales Segments:")
-print(df_3)
-print("\nBottom Sales Segments:")
-print(df_4)
+df = pd.read_csv('.../Retail_Analysis-main/Results/analysis/top_performers.csv')
+display(df.head())
