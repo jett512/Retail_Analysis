@@ -1,0 +1,16 @@
+Raw Column,Data Type,Imputed Columns,Imputed Description,notes / examples
+KEY,int,KEY,"Unique identifier for each record, primary key.",pk
+ATTRIBUTE_1,enum,promotion_TF,Binary flag for promotion/status,0 or 1
+ATTRIBUTE_2,enum,product_category,Product category or SKU group,"A5, A10, AA9, A11, AA14"
+ATTRIBUTE_3,enum,region,"Store region, sales territory, or operational cluster","GROUP_4, GROUP_40, GROUP_55"
+ATTRIBUTE_4,enum,tier,Functional segmentation such as marketing cluster or tier,"GROUP_1, GROUP_4, GROUP_6"
+METRIC_1,curr,product_cost,"Total product or purchase cost, key for profitability."
+METRIC_2,percentage,profit_margin,"Gross profit margin percentage.",needs formatting
+METRIC_3,curr,sales_revenue,"Total or gross sales revenue.",needs formatting
+METRIC_4,curr,net_revenue,"Net revenue after discounts and adjustments."
+METRIC_5,percentage,margin_pct,"Margin or markup percentage."
+METRIC_6,percentage,conversion_rate,"Store or product conversion rate."
+METRIC_7,percentage,retention_rate,"Customer retention or loyalty rate."
+METRIC_8,percentage,market_share,"Market share or satisfaction metric."
+METRIC_9,curr,cogs,"Cost of goods sold or operating expenses.",needs formatting
+METRIC_10,percentage,growth_rate,"Growth or performance rate over time.",needs formatting
