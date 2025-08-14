@@ -42,7 +42,7 @@ def sales_and_margin_analysis(df_or_list, output_dir=None):
 
     top_sales, bottom_sales = top_bottom(combined, 'avg_sales_revenue')
     top_margin, bottom_margin = top_bottom(combined, 'avg_profit_margin')
-    top_perf, bottom_perf = top_bottom(combined_perf, 'performance_score')
+    top_perf, bottom_perf = top_bottom(round(combined_perf,2), 'performance_score')
 
     if output_dir:
         output_dir = Path(output_dir)
@@ -56,3 +56,4 @@ def sales_and_margin_analysis(df_or_list, output_dir=None):
         bottom_perf.to_csv(output_dir / "bottom_performers.csv", index=False)
 
     return top_sales, bottom_sales, top_margin, bottom_margin, top_perf, bottom_perf
+
