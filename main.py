@@ -11,30 +11,31 @@ with open("config.yaml") as f:
     paths = yaml.safe_load(f)["paths"]
 
 def main():
-    # Preprocess
+    # Preprocess dataset
     df = preprocess_dataset(paths["raw_data"], paths["processed_data"])
 
-    # Create EDA results folder
-    eda_results_dir = Path(paths["eda_results"]).parent
-    eda_results_dir.mkdir(parents=True, exist_ok=True)
+    # Ensure EDA results directory exists
+    Path(paths["dataset_analysis"]).parent.mkdir(parents=True, exist_ok=True)
 
     # Run EDA functions and save outputs
-    analyze_dataset(df).to_csv(eda_results_dir / "dataset_analysis.csv", index=False)
-    metric_analysis(df).to_csv(eda_results_dir / "metric_analysis.csv", index=False)
-    summary_statistics(df).to_csv(eda_results_dir / "summary_statistics.csv", index=False)
-    detect_outliers(df).to_csv(eda_results_dir / "outliers.csv", index=False)
+    analyze_dataset(df).to_csv(paths["dataset_analysis"], index=False)
+    metric_analysis(df).to_csv(paths["metric_analysis"], index=False)
+    summary_statistics(df).to_csv(paths["summary_statistics"], index=False)
+    detect_outliers(df).to_csv(paths["outliers"], index=False)
 
-    # Create Analysis results folder
-    analysis_results_dir = Path(paths["analysis_results"]).parent
-    analysis_results_dir.mkdir(parents=True, exist_ok=True)
+    # Ensure analysis results directory exists
+    Path(paths["sales_margin_segments"]).parent.mkdir(parents=True, exist_ok=True)
 
     # Run analysis functions and save outputs
     metric_correlations(
         df,
-        output_csv=analysis_results_dir / "correlation_matrix.csv",
-        output_fig=Path(paths["correlation_plot"])
+        output_csv=paths["correlation_matrix"],
+        output_fig=paths["correlation_plot"]
     )
-    sales_and_margin_analysis(df, output_dir=analysis_results_dir)
+    sales_and_margin_analysis(
+        df,
+        output_dir=Path(paths["sales_margin_segments"]).parent
+    )
 
 if __name__ == "__main__":
     main()
